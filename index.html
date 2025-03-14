@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Minesweeper</h1>
+
+        <!-- Difficulty Dropdown and Buttons -->
+        <div class="menu">
+            <label for="difficulty" class="difficulty-label">Select Difficulty:</label>
+            <select id="difficulty" class="difficulty-select">
+                <option value="1">Beginner</option>
+                <option value="2">Intermediate</option>
+                <option value="3">Expert</option>
+            </select>
+            <button id="restartButton" class="game-btn">Restart</button>
+            <button id="solveButton" class="game-btn">Solve</button>
+        </div>
+
+        <!-- Game Info -->
+        <div class="game-info">
+            <div id="bombCounter" class="counter">Bombs Left: 15</div>
+            <div id="timer" class="counter">Time: 0</div>
+        </div>
+
+        <!-- Game Board -->
+        <div id="board" class="board"></div>
+    </div>
+
+    <script src="minesweeper.js"></script>
+    <script src="solver
+	.js"></script>
+</body>
+</html>
